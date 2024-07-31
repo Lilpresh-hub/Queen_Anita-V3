@@ -93,7 +93,7 @@ const updateKoyebEnv = async (varName, varValue) => {
 // Main function to set environment variable and restart the appropriate service
 const setEnvCommand = async (m, args) => {
   if (args.length !== 1) {
-    m.reply('*Usage: .setvar OWNER_NUMBER=2347XXXXXXXX*');
+    m.reply('*Usage: .setvar OWNER_NUMBER=2547XXXXXXXX*');
     return;
   }
 
@@ -101,7 +101,7 @@ const setEnvCommand = async (m, args) => {
   const [varName, varValue] = varAssignment.split('=');
 
   if (!varName || !varValue) {
-    m.reply('*Invalid format. Usage: .setvar OWNER_NUMBER=2347XXXXXXX');
+    m.reply('*Invalid format. Usage: .setvar OWNER_NUMBER=2547XXXXXXX');
     return;
   }
 

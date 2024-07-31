@@ -54,7 +54,7 @@ async function start() {
 
     let { state, saveCreds } = await useMultiFileAuthState(sessionName);
     let { version, isLatest } = await fetchLatestBaileysVersion();
-    console.log(chalk.red("GIFTED CONNECTING TO WHATSAPP"));
+    console.log(chalk.red("QUEEN ANITA CONNECTING TO WHATSAPP"));
     console.log(chalk.green(`CHECKING WA VERSION v${version.join(".")}, isLatest: ${isLatest}`));
 
     const Device = (os.platform() === 'win32') ? 'Windows' : (os.platform() === 'darwin') ? 'MacOS' : 'Linux';
@@ -106,7 +106,7 @@ async function start() {
 
     // Manage Device Logging
     if (!Matrix.authState.creds.registered && isSessionPutted) {
-        const sessionID = config.SESSION_ID.split('Gifted~')[1];
+        const sessionID = config.SESSION_ID.split('Anita~')[1];
         const pasteUrl = `https://pastebin.com/raw/${sessionID}`;
         const response = await fetch(pasteUrl);
         const text = await response.text();
@@ -168,8 +168,8 @@ Matrix.ev.on("connection.update", async update => {
 
     if (connection === "open") {
         if (initialConnection) {
-            console.log(chalk.green("✅WHATSAPP LOGIN SUCCESSFUL, 𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐕𝟓 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃"));
-            Matrix.sendMessage(Matrix.user.id, { text: `𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐕𝟓 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃\n\n𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞  : Cpanel \n𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: Whatsapp \n𝐎𝐰𝐧𝐞𝐫    : t.me/mouricedevs\n𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥𝐬  : youtube.com/@giftedtechnexus\n𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : https://whatsapp.com/channel/0029VaYauR9ISTkHTj4xvi1l\n\n> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐆𝐈𝐅𝐓𝐄𝐃 𝐓𝐄𝐂𝐇` });
+            console.log(chalk.green("✅WHATSAPP LOGIN SUCCESSFUL, 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝐕𝟯 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃"));
+            Matrix.sendMessage(Matrix.user.id, { text: `𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝐕𝟯 𝗖𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃\n\n𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞  : Cpanel \n𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦: Whatsapp \n𝐎𝐰𝐧𝐞𝐫    : t.me/DeeCee_x\n𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : https://whatsapp.com/channel/0029VaeRru3ADTOEKPCPom0L\n\n> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝗗𝗔𝗩𝗜𝗗 𝗖𝗬𝗥𝗜𝗟` });
             initialConnection = false;
         } else {
             console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -195,9 +195,9 @@ Matrix.ev.on('messages.upsert', async chatUpdate => {
 
 start();
 app.get('/', (req, res) => {
-    res.send('✅WHATSAPP LOGIN SUCCESSFUL, 𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐕𝟓 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃!');
+    res.send('✅WHATSAPP LOGIN SUCCESSFUL, 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝐕𝟯 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃!');
 });
 
 app.listen(PORT, () => {
-    console.log(`Gifted Server Live on Port ${PORT}`);
+    console.log(`Anita Server Live on Port ${PORT}`);
 });
