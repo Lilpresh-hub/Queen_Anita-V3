@@ -93,7 +93,7 @@ const serverStatusCommand = async (m, Matrix) => {
       clearInterval(loadingInterval);
 
       // Create the status message
-      const statusMessage = `*Hello _${m.pushName}_*\n*Gifted-Md* is Active 24/7\n\n*Uptime:* ${uptime}\n*Database:* CPanel\n*Platform:* Whatsapp\n\n> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*`;
+      const statusMessage = `*Hello _${m.pushName}_*\n*Queen-Anita* is Active 24/7\n\n*Uptime:* ${uptime}\n*Database:* CPanel\n*Platform:* Whatsapp\n\n> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*`;
 
       await typeWriterEffect(m, Matrix, key, statusMessage);
     } catch (error) {

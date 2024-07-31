@@ -39,7 +39,7 @@ try {
     url: videoInfo.thumbnail,
   },
   caption: `
-╭──═❮ *Gifted Audio Player* ✨ ❯═─┈•
+╭──═❮ *Anita Audio Player* ✨ ❯═─┈•
 │✑ *Title:* ${videoInfo.title}
 │✑ *duration:* ${videoInfo.timestamp}
 │✑ *Uploaded* ${videoInfo.ago}
@@ -82,7 +82,7 @@ try {
     url: firstVideo.thumbnail,
   },
   caption: `
-╭──═❮ *Gifted Audio Player* ✨ ❯═─┈•
+╭──═❮ *Anita Audio Player* ✨ ❯═─┈•
 │✑ *Title:* ${firstVideo.title}
 │✑ *duration:* ${firstVideo.timestamp}
 │✑ *Uploaded* ${firstVideo.ago}

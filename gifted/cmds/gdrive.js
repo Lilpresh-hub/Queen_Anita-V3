@@ -20,7 +20,7 @@ const gdriveDownload = async (m, Matrix) => {
 
       if (gdriveInfo && gdriveInfo.status && gdriveInfo.data) {
         const mediaUrl = gdriveInfo.data;
-        const caption = `> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*`;
+        const caption = `> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*`;
 
         // Inferring the file type based on the file extension
         const extension = mediaUrl.split('.').pop().toLowerCase();

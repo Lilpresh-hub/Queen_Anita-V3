@@ -59,8 +59,8 @@ const quotedChat = async (m, gss) => {
       const buffer = Buffer.from(response.data.result.image, 'base64');
 
       await gss.sendImageAsSticker(m.from, buffer, m, {
-        packname: "𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯",
-        author: "> 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯"
+        packname: "𝐆𝐈𝐅𝐓𝐄𝐃",
+        author: "> 𝐆𝐈𝐅𝐓𝐄𝐃"
       });
     } catch (error) {
       console.error('Error during HTTP request:', error);

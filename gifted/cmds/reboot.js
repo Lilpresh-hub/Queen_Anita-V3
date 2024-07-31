@@ -5,7 +5,7 @@ const rebootBot = async (m) => {
 
   if (cmd === 'reboot') {
     try {
-    await m.reply(`Hello *_${m.pushName}_,*\n *Gifted-Md is Rebooting....*`)
+    await m.reply(`Hello *_${m.pushName}_,*\n *Anita is Rebooting....*`)
       process.exit()
     } catch (error) {
       console.error(error);

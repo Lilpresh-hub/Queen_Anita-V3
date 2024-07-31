@@ -67,12 +67,12 @@ const tempMailCommand = async (m, Matrix) => {
                                 text: `*ɢᴇɴᴇʀᴀᴛᴇᴅ ᴇᴍᴀɪʟ:*\n ${tempEmail}`
                             }),
                             footer: proto.Message.InteractiveMessage.Footer.create({
-                                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
                             }),
                             header: proto.Message.InteractiveMessage.Header.create({
-                                title: "*𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐓𝐄𝐌𝐏𝐌𝐀𝐈𝐋 𝐒𝐘𝐒𝐓𝐄𝐌*",
+                                title: "*𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯 𝐓𝐄𝐌𝐏𝐌𝐀𝐈𝐋 𝐒𝐘𝐒𝐓𝐄𝐌*",
                                 gifPlayback: true,
-                                subtitle: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢɪғᴛᴇᴅ ᴛᴇᴄʜ",
+                                subtitle: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ david",
                                 hasMediaAttachment: false
                             }),
                             nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
@@ -155,10 +155,10 @@ const tempMailCommand = async (m, Matrix) => {
                                 text: inboxMessages
                             }),
                             footer: proto.Message.InteractiveMessage.Footer.create({
-                                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
                             }),
                             header: proto.Message.InteractiveMessage.Header.create({
-                                title: "𝐆𝐈𝐅𝐓𝐄𝐃 𝐓𝐄𝐌𝐏𝐌𝐀𝐈𝐋 𝐈𝐍𝐁𝐎𝐗",
+                                title: "𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯 𝐓𝐄𝐌𝐏𝐌𝐀𝐈𝐋 𝐈𝐍𝐁𝐎𝐗",
                                 gifPlayback: true,
                                 subtitle: "",
                                 hasMediaAttachment: false

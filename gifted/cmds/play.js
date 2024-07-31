@@ -87,10 +87,10 @@ const playcommand = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n*ᴛɪᴛᴛʟᴇ:* ${currentResult.title}\n*ᴀʀᴛɪsᴛ:* ${currentResult.author.name}\n*ᴠɪᴇᴡs:* ${currentResult.views}\n*ᴅᴜʀᴀᴛɪᴏᴍ:* ${currentResult.timestamp}\n*User:* _${m.pushName}_\n`
+                text: `𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n*ᴛɪᴛᴛʟᴇ:* ${currentResult.title}\n*ᴀʀᴛɪsᴛ:* ${currentResult.author.name}\n*ᴠɪᴇᴡs:* ${currentResult.views}\n*ᴅᴜʀᴀᴛɪᴏᴍ:* ${currentResult.timestamp}\n*User:* _${m.pushName}_\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/bf3a4cac5fc11b3199b56.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -164,10 +164,10 @@ const playcommand = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n*ᴛɪᴛᴛʟᴇ:* ${currentResult.title}\n*ᴀʀᴛɪsᴛ:* ${currentResult.author.name}\n*ᴠɪᴇᴡs:* ${currentResult.views}\n*ᴅᴜʀᴀᴛɪᴏɴ:* ${currentResult.timestamp}\n*User:* _${m.pushName}_\n`
+                text: `𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n*ᴛɪᴛᴛʟᴇ:* ${currentResult.title}\n*ᴀʀᴛɪsᴛ:* ${currentResult.author.name}\n*ᴠɪᴇᴡs:* ${currentResult.views}\n*ᴅᴜʀᴀᴛɪᴏɴ:* ${currentResult.timestamp}\n*User:* _${m.pushName}_\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/bf3a4cac5fc11b3199b56.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -216,9 +216,9 @@ const playcommand = async (m, Matrix) => {
           const fileSizeInMB = finalMediaBuffer.length / (1024 * 1024);
 
           if (type === 'audio' && fileSizeInMB <= 500) {
-            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*' };
+            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*' };
           } else if (type === 'video' && fileSizeInMB <= 500) {
-            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*' };
+            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*' };
           } else if (type === 'audiodoc') {
             content = { document: finalMediaBuffer, mimetype: 'audio/mp3', fileName: `${selectedMedia.title}.mp3` };
           } else if (type === 'videodoc') {

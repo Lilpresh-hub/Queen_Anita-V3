@@ -22,7 +22,7 @@ const rvo = async (m, sock) => {
     const type = Object.keys(msg)[0];
     
     const originalCaption = msg[type].caption || '';
-    const newCaption = `${originalCaption}\n\n> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*`;
+    const newCaption = `${originalCaption}\n\n> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*`;
 
 
     // Download the media content

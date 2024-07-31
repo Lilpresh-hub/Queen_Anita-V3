@@ -74,10 +74,10 @@ const facebookCommand = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐅𝐁 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n🔍 Select the desired video quality to download.\n\n📌 Choose an option to download.\n\n`
+                text: `𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯 𝐅𝐁 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n🔍 Select the desired video quality to download.\n\n📌 Choose an option to download.\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/bf3a4cac5fc11b3199b56.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -128,7 +128,7 @@ const facebookCommand = async (m, Matrix) => {
           const fileSizeInMB = finalMediaBuffer.length / (1024 * 1024);
 
           if (fileSizeInMB <= 300) {
-            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*' };
+            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*' };
             await Matrix.sendMessage(m.from, content, { quoted: m });
           } else {
             await m.reply('The video file size exceeds 300MB.');

@@ -21,7 +21,7 @@ const imdb = async (m, gss) => {
     }
 
     imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n";
-    imdbt += " ```GIFTED-MD MOVIE SEARCH```\n";
+    imdbt += " ```QUEEN ANITA V3 MOVIE SEARCH```\n";
     imdbt += "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n";
     imdbt += `🎬Title      : ${fids.data.Title}\n`;
     imdbt += `📅Year       : ${fids.data.Year}\n`;

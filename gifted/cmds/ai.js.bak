@@ -8,15 +8,15 @@ const gptResponse = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
 
-  const validCommands = ['chatgpt4v2', 'gpt4v2'];
+  const validCommands = ['ai'];
 
   if (validCommands.includes(cmd)) {
-    if (!text) return m.reply(`Hello *_${m.pushName}_,*\n I am Gifted Premium ChatGpt4 V2.\n Please Ask a Question.`);
+    if (!text) return m.reply(`Hello *_${m.pushName}_,*\n Gifted-Ai Here.\n Please Ask Me a Question.`);
 
     try {
       await m.React('🕘');
 
-      const apiUrl = `http://gpt4.giftedtech.workers.dev/?prompt=${encodeURIComponent(text)}`;
+      const apiUrl = `https://api.maher-zubair.tech/ai/chatgpt?q=${encodeURIComponent(text)}`;
       const response = await axios.get(apiUrl);
       const result = response.data;
 
@@ -41,7 +41,7 @@ const gptResponse = async (m, Matrix) => {
                     text: answer
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "> > *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
+                    text: "> > *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     title: "",

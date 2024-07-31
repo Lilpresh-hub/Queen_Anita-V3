@@ -23,7 +23,7 @@ const teraboxDownload = async (m, Matrix) => {
       if (result.response && result.response.length > 0) {
         const mediaInfo = result.response[0];
         const mediaUrl = mediaInfo.resolutions["Fast Download"];
-        const caption = "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*";
+        const caption = "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*";
         
         if (mediaUrl) {
           const sendVideo = {

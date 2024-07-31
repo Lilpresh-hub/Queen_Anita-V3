@@ -35,7 +35,7 @@ const video = async (m, Matrix) => {
 
             const videoInfo = await yts({ videoId: ytdl.getURLVideoID(text) });
     
-            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Successfully Downloaded: *${text}*\nRequested By: *_${m.pushName}_*\n\n> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐕𝟓*` }, { quoted: m });
+            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Successfully Downloaded: *${text}*\nRequested By: *_${m.pushName}_*\n\n> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*` }, { quoted: m });
             await m.React("✅");
           } catch (err) {
             console.error('Error sending video:', err);
@@ -67,7 +67,7 @@ const video = async (m, Matrix) => {
           try {
             const finalVideoBuffer = Buffer.concat(videoBuffer);
           
-            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Successfully Downloaded: *${text}*\nRequested By: *_${m.pushName}_*\n\n> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐕𝟓*` }, { quoted: m });
+            await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Successfully Downloaded: *${text}*\nRequested By: *_${m.pushName}_*\n\n> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*` }, { quoted: m });
             await m.React("✅");
           } catch (err) {
             console.error('Error sending video:', err);

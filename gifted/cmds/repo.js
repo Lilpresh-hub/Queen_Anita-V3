@@ -3,20 +3,20 @@ const { generateWAMessageFromContent, proto } = pkg;
 import axios from 'axios'; // Import axios for HTTP requests
 
 const handleRepoCommand = async (m, Matrix) => {
-  const repoUrl = 'https://api.github.com/repos/mouricedevs/gifted-md';
+  const repoUrl = 'https://github.com/DeeCeeXxx/Queen_Anita-V3';
   try {
     const response = await axios.get(repoUrl);
     const repoData = response.data;
 
     const { full_name, name, forks_count, stargazers_count, created_at, updated_at, owner } = repoData;
 
-    const messageText = `Hello *_${m.pushName}_,*\n *ɢɪғᴛᴇᴅ-ᴍᴅ,* ᴀ sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ɢɪғᴛᴇᴅ ᴛᴇᴄʜ.\n\n
+    const messageText = `Hello *_${m.pushName}_,*\n *ǫᴜᴇᴇɴ ᴀɴɪᴛᴀ ᴠ3,* ᴀ sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ᴅᴀᴠɪᴅ ᴄʏʀɪʟ.\n\n
     *❲❒❳ ɴᴀᴍᴇ:* ${name} \n
     *❲❒❳ sᴛᴀʀs:* ${stargazers_count} \n
     *❲❒❳ ғᴏʀᴋs:* ${forks_count} \n
     *❲❒❳ ᴄʀᴇᴀᴛᴇᴅ ᴏɴ:* ${new Date(created_at).toLocaleDateString()} \n
     *❲❒❳ ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇᴅ:* ${new Date(updated_at).toLocaleDateString()} \n
-    *❲❒❳ ᴏᴡɴᴇʀ:* 𝑮𝒊𝒇𝒕𝒆𝒅 𝑻𝒆𝒄𝒉`;
+    *❲❒❳ ᴏᴡɴᴇʀ:*ᴅᴀᴠɪᴅ ᴄʏʀɪʟ`;
 
     const repoMessage = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
@@ -30,7 +30,7 @@ const handleRepoCommand = async (m, Matrix) => {
               text: messageText
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "*©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+              text: "*©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
              ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/bf3a4cac5fc11b3199b56.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -59,14 +59,14 @@ const handleRepoCommand = async (m, Matrix) => {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
                     display_text: "ᴠɪsɪᴛ & ғᴏʀᴋ ʀᴇᴘᴏ",
-                    url: `https://github.com/mouricedevs/gifted-md/fork`
+                    url: `https://github.com/DeeCeeXxx/Queen_Anita-V3fork`
                   })
                 },
                 {
                   name: "cta_url",
                   buttonParamsJson: JSON.stringify({
                     display_text: "ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ",
-                    url: `https://whatsapp.com/channel/0029VaYauR9ISTkHTj4xvi1l`
+                    url: `https://whatsapp.com/channel/0029VaeRru3ADTOEKPCPom0L`
                   })
                 }
               ],

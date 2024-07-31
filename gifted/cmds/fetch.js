@@ -23,7 +23,7 @@ const fetchData = async (m, Matrix) => {
 
       const contentType = res.headers.get('content-type');
       if (!/text|json/.test(contentType)) {
-        await Matrix.sendMedia(m.from, url, 'file', '> > *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*', m);
+        await Matrix.sendMedia(m.from, url, 'file', '> > *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*', m);
         return;
       }
 

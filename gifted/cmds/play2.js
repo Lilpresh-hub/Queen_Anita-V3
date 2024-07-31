@@ -76,10 +76,10 @@ const song = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n*User:* _${m.pushName}_\n\n`
+                text: `𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n*User:* _${m.pushName}_\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/bf3a4cac5fc11b3199b56.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -161,7 +161,7 @@ const song = async (m, Matrix) => {
           const audioStream = ytdl(videoUrl, { filter: 'audioonly', quality: 'highestaudio' });
           const finalAudioBuffer = await streamToBuffer(audioStream);
           
-          await Matrix.sendMessage(m.from, { image: { url: thumbnailUrl }, caption: `Title: ${title}\nAuthor: ${author}\nDuration: ${duration}\n*User:* _${m.pushName}_\n\n> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*`}, { quoted: m });
+          await Matrix.sendMessage(m.from, { image: { url: thumbnailUrl }, caption: `Title: ${title}\nAuthor: ${author}\nDuration: ${duration}\n*User:* _${m.pushName}_\n\n> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*`}, { quoted: m });
 
           await Matrix.sendMessage(m.from, { audio: finalAudioBuffer, mimetype: 'audio/mpeg' }, { quoted: m });
         } else {
@@ -169,7 +169,7 @@ const song = async (m, Matrix) => {
           const videoStream = ytdl(videoUrl, { filter: 'audioandvideo', quality: 'highest' });
           const finalVideoBuffer = await streamToBuffer(videoStream);
 
-          await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Title: ${title}\nAuthor: ${author}\nDuration: ${duration}\n*User* _${m.pushName}_\n\n> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*` }, { quoted: m });
+          await Matrix.sendMessage(m.from, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: `Title: ${title}\nAuthor: ${author}\nDuration: ${duration}\n*User* _${m.pushName}_\n\n> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*` }, { quoted: m });
         }
       } catch (error) {
         console.error("Error fetching video details:", error);

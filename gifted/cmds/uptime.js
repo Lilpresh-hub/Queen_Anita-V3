@@ -17,7 +17,7 @@ const alive = async (m, Matrix) => {
 
   const uptimeMessage = `
 *Hello _${m.pushName}_*\n
-*GIFTED MD IS RUNNING!!*
+*QUEEN ANITA IS RUNNING!!*
 *BOT UPTIME INFO:* ${readmore}
 *╭═════════════════⊷*
 *┃❍ ${days} Day(s)*
@@ -77,7 +77,7 @@ const alive = async (m, Matrix) => {
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+            text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
@@ -94,7 +94,7 @@ const alive = async (m, Matrix) => {
                   isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "Gifted-MD",
+                  newsletterName: "David",
                   serverMessageId: 143
                 }
               }

@@ -67,10 +67,10 @@ const searchAPK = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃 𝐀𝐏𝐊 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n🔍 Search and download your favorite APKs easily.\n\n📌 Simply select an APK from the list below to get started.\n\n`
+                text: `𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯 𝐀𝐏𝐊 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n🔍 Search and download your favorite APKs easily.\n\n📌 Simply select an APK from the list below to get started.\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/bf3a4cac5fc11b3199b56.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -128,7 +128,7 @@ const searchAPK = async (m, Matrix) => {
         const iconUrl = apkDetails.icon;
         const size = apkDetails.size;
 
-        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `You selected this APK:\n\nName: ${selectedAPK.name}\nsize: ${size}\n\n> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*` }, { quoted: m });
+        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `You selected this APK:\n\nName: ${selectedAPK.name}\nsize: ${size}\n\n> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*` }, { quoted: m });
 
   
         const apkMessage = {

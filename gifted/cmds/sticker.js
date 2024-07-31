@@ -6,8 +6,8 @@ const stickerCommand = async (m, gss) => {
   const prefix = prefixMatch ? prefixMatch[0] : '/';
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
 
-  const packname = "𝐆𝐈𝐅𝐓𝐄𝐃-𝐌𝐃";
-  const author = "𝐆𝐈𝐅𝐓𝐄𝐃";
+  const packname = "𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯";
+  const author = "𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯";
 
   const validCommands = ['sticker', 's'];
 

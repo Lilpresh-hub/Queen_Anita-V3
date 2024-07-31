@@ -94,7 +94,7 @@ const tiktokCommand = async (m, Matrix) => {
                 text: `𝐆𝐈𝐅𝐓𝐄𝐃 𝐓𝐈𝐊𝐓𝐎𝐊 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n\n*ᴛɪᴛᴛʟᴇ:* ${currentResult.data.title}\n*ᴀᴜᴛʜᴏʀ:* ${currentResult.data.author.nickname}\n*ᴠɪᴇᴡs:* ${currentResult.data.view}\n*ᴅᴜʀᴀᴛɪᴏɴ:* ${currentResult.data.duration}s\nUser: *_${m.pushName}_*\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                text: "> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/bf3a4cac5fc11b3199b56.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -157,13 +157,13 @@ const tiktokCommand = async (m, Matrix) => {
           const fileSizeInMB = finalMediaBuffer.length / (1024 * 1024);
 
           if (type === 'video' && fileSizeInMB <= 300) {
-            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*' };
+            content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*' };
           } else if (type === 'audio' && fileSizeInMB <= 300) {
-            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*' };
+            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*' };
           } else if (type === 'video2' && fileSizeInMB <= 300) {
-            content = { document: finalMediaBuffer, mimetype: 'video/mp4', fileName: 'Tiktok.mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*' };
+            content = { document: finalMediaBuffer, mimetype: 'video/mp4', fileName: 'Tiktok.mp4', caption: '> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*' };
           } else if (type === 'audio2' && fileSizeInMB <= 300) {
-            content = { document: finalMediaBuffer, mimetype: 'audio/mpeg', fileName: 'Tiktok.mp3', caption: '> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*' };
+            content = { document: finalMediaBuffer, mimetype: 'audio/mpeg', fileName: 'Tiktok.mp3', caption: '> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*' };
           }
 
           await Matrix.sendMessage(m.from, content, { quoted: m });

@@ -41,7 +41,7 @@ const gptResponse = async (m, Matrix) => {
                     text: answer
                   }),
                   footer: proto.Message.InteractiveMessage.Footer.create({
-                    text: "> > *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*"
+                    text: "> > *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*"
                   }),
                   header: proto.Message.InteractiveMessage.Header.create({
                     title: "",

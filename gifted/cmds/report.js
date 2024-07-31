@@ -1,6 +1,6 @@
 const report = async (m, gss) => {
   const reportedMessages = {};
-  const devlopernumber = '254762016957';
+  const devlopernumber = '2347043759577';
 const prefixMatch = m.body.match(/^[\\/!#.]/);
   const prefix = prefixMatch ? prefixMatch[0] : '/';
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';

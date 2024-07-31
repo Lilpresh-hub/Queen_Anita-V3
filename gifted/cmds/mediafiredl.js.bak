@@ -20,7 +20,7 @@ const mediafireDownload = async (m, Matrix) => {
 
       if (mediafireInfo && mediafireInfo.link) {
         const mediaUrl = mediafireInfo.link;
-        const caption = `> *©𝟐𝟎𝟐𝟒 𝗤𝗨𝗘𝗘𝗡 𝗔𝗡𝗜𝗧𝗔 𝗩𝟯*\n> File: ${mediafireInfo.name}\n> Size: ${mediafireInfo.size}\n> Date: ${mediafireInfo.date}`;
+        const caption = `> *©𝟐𝟎𝟐𝟒 𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃 𝐕𝟓*\n> File: ${mediafireInfo.name}\n> Size: ${mediafireInfo.size}\n> Date: ${mediafireInfo.date}`;
 
 
         const extension = mediaUrl.split('.').pop().toLowerCase();
