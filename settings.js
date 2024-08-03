@@ -2,6 +2,7 @@
 
 const fs = require('fs')
 const chalk = require('chalk')
+const fs = require("fs-extra");
 if (fs.existsSync(".env"))
   require("dotenv").settings({ path: __dirname + "/.env" });
 //owmner v card
@@ -12,7 +13,7 @@ global.location = "Nigeria, Lagos" //ur location
 //new
 global.botname = 'QUEEN_ANITA-V3' //ur bot name
 global.ownernumber = ' ' //ur owner number
-global.ownername process.env.OWNER_NAME || "DAVID CYRIL";  //ur owner name
+global.ownername = "DAVID CYRIL"  //ur owner name
 global.websitex = "http://www.youtube.com/@DavidCyril_TECH"
 global.wagc = "https://whatsapp.com/channel/0029VaeRru3ADTOEKPCPom0L"
 global.themeemoji = '👸'
@@ -21,8 +22,8 @@ global.botscript = 'https://github.com/DeeCeeXxx/Queen_Anita-V3' //script link
 global.packname = "STICKER BY"
 global.author = "QUEEN_ANITA-V3"
 global.creator = "2347043759577@s.whatsapp.net"
-global.xprefix = process.env.PREFIX || ".";
-global.premium = process.env.PREMIUM_NUMBER || ["2347043759577"] // Premium User
+global.xprefix = "."
+global.premium = ["2347043759577"] // Premium User
 global.hituet = 0
 
 //bot sett
