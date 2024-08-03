@@ -42,7 +42,7 @@ global.mess = {
     success: 'Here you go!'
 }
 //thumbnail
-global.thumb = fs.readFileSync('./theme/queen_anita.jpg')
+global.thumb = fs.readFileSync('./theme/queen_anitapic.jpg')
 
 //text bug
 global.xbugtex = {
