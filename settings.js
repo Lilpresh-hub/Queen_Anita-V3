@@ -2,7 +2,6 @@
 
 const fs = require('fs')
 const chalk = require('chalk')
-const fs = require("fs-extra");
 if (fs.existsSync(".env"))
   require("dotenv").settings({ path: __dirname + "/.env" });
 //owmner v card
