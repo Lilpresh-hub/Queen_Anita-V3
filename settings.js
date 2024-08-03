@@ -2,9 +2,6 @@
 
 const fs = require('fs')
 const chalk = require('chalk')
-const fs = require("fs-extra");
-if (fs.existsSync(".env"))
-  require("dotenv").settings({ path: __dirname + "/.env" });
 //owmner v card
 global.ytname = "YouTube: David Cyril Tech" //ur yt chanel name
 global.socialm = "Telegram: t.me:DeeCee_x" //ur github or insta name
