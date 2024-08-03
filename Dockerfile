@@ -1,6 +1,3 @@
-# Don't change this [ /GiftedTech/ ] name!
-# Change from below link, else bot wil not work!
-
 FROM node:lts-buster
 
 RUN apt-get update && \
@@ -10,13 +7,15 @@ RUN apt-get update && \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
+  
+RUN gitclone https://github.com/DeeCeeXxx/Queen_Anita-V3
 
 COPY package.json .
 
-RUN npm i && npm i -g qrcode-terminal
+RUN npm install && npm install qrcode-terminal
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 3000
 
-CMD ["node", "gifted/gifted.js"] 
+CMD ["node", "index.js", "--server"]

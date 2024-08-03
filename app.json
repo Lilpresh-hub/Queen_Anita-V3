@@ -1,111 +1,18 @@
 {
-  "name": "gifted-md@v5.0.0",
-  "description": "I am Gifted-Md Whatsapp MultiDevice Whatsapp Bot built in NodeJs to make experience better",
-  "website": "https://web.giftedtechnexus.co.ke",
-  "repository": "https://github.com/mouricedevs/gifted-md",
-  "logo": "https://telegra.ph/file/a202f454c9532c3f5b7f8.jpg",
-  "keywords": ["gifted-md", "giftedtech", "Gifted-Md"],
-  "success_url": "/",
-  "stack": "heroku-24",
-  "env": { 
-    "MODE": {
-      "description": "Put Mode either public or private",
-      "required": true,
-      "value": "private"
+  "name": "Queen_Anita-V3",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://github.com/DeeCeeXxx/Queen_Anita-V3",
+  "logo": "https://telegra.ph/file/a86f555c281a9ba0f9c3d.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
     },
-     "OWNER_NAME": {
-      "description": "Put the name of Bot Owner",
-      "required": false,
-      "value": "GIFTED TECH"
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
-    "OWNER_NUMBER": {
-      "description": "Put Bot Owner Numbers",
-      "required": false,
-      "value": "254110853827"
-    },
-     "NOT_ALLOW": {
-      "description": "Put value true to disable bot in pm during public mode.",
-      "required": false,
-      "value": "false"
-    },
-     "WELCOME": {
-      "description": "Put true or false to enableand disable group welcoming and goodbye messages",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_READ_STATUS": {
-      "description": "Put true if you want bot to view status",
-      "required": false,
-      "value": "true"
-    },
-    "AUTO_READ": {
-      "description": "Put true if you want bot to read message",
-      "required": false,
-      "value": ""
-    },
-    "AUTO_TYPING": {
-      "description": "Put true if you want bot to show typing",
-      "required": false,
-      "value": ""
-    },
-    "AUTO_RECORDING": {
-      "description": "Put true if you want bot to show recording audio",
-      "required": false,
-      "value": ""
-    },
-    "ALWAYS_ONLINE": {
-      "description": "Put true if you want bot to show always online",
-      "required": false,
-      "value": "true"
-    },
-    "AUTO_DOWNLOAD": {
-      "description": "Put true if you need to download media by using link without cmd",
-      "required": false,
-      "value": "true"
-    },
-    "AUTO_BLOCK": {
-      "description": "Put true if you want bot to auto block only 212 numbers",
-      "required": false,
-      "value": "true"
-    },
-    "AUTO_REACT": {
-      "description": "Put value to true or false",
-      "required": false,
-      "value": "false"
-    },
-     "HEROKU_APP_NAME": {
-      "description": "Put your heroku app name as entered above.",
-      "required": false,
-      "value": ""
-    },
-    "PREFIX": {
-      "description": "You can leave blank for bot to use multiple prefixes",
-      "required": false,
-      "value": "."
-    },
-     "DEPLOYMENT_PLATFORM": {
-      "description": "Leave the value to default unless otherwise. ",
-      "required": true,
-      "value": "heroku"
-    },
-    "AUTO_REJECT_CALLS": {
-      "description": "Put true if you want to reject call",
-      "required": false,
-      "value": "false"
-     }
-    },
-    "formation": {
-                "web": {
-                        "quantity": 1,
-                        "size": "Standard-2X"
-                }
-        },
-    "addons": [{ "plan": "heroku-postgresql:essential-0" }],
-    "buildpacks": [
-    {"url": "https://github.com/heroku/heroku-buildpack-nodejs#latest"},
-    {"url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"},
-    {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"},
-    {"url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"}
-  ]
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
-
+  ]
+}
