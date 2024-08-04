@@ -13,6 +13,9 @@ RUN git clone https://github.com/DeeCeeXxx/Queen_Anita-V3
 COPY package.json .
 
 RUN npm install && npm install qrcode-terminal
+RUN npm install pm2 -g
+RUN npm install --legacy-peer-deps
+
 
 COPY . .
 
